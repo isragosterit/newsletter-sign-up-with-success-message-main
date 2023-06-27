@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Sign-up form start -->
+
+    <div class="form-container" id="formContainer">
+        <div class="info-box" id="infoBox">
+            <p class="title">Stay updated!</p>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <li><img src="./assets/images/icon-list.svg" alt="Icon List" class="icon-list">Product discovery and building what matters</li>
+            <li><img src="./assets/images/icon-list.svg" alt="Icon List" class="icon-list">Measuring to ensure updates are a success</li>
+            <li><img src="./assets/images/icon-list.svg" alt="Icon List" class="icon-list">And much more!</li>
+
+            <div class="input-container">
+                <div class="label-email">
+                    <p class="email">Email address</p>
+                    <p id="emailError" class="alert">Valid e-mail required</p>
+                </div>
+                <input placeholder="email@company.com" type="email" id="emailInput"></input>
+                <button type="submit" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+            </div>
+        </div>
+        <img src="assets/images/illustration-sign-up-desktop.svg" class="svg-picture" id="svgPicture" alt="desktop picture">
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <div class="thanks-message form-container" id="subscribeContainer">
+            <p class="title"><img src="./assets/images/icon-list.svg" alt="Icon List" class="success-icon">Thanks for subscribing!</p>
+            <p id="confirmationEmailText">A confirmation email has been sent to <span id="userEmail"></span>. Please open it and click the button inside to confirm your subscription.</p>
+            <button onclick="dismissMessage()">Dismiss message</button>
+    </div>
+
+    <!-- Success message end -->
+
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">İsra Gösterit</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
